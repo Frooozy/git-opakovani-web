@@ -1,0 +1,138 @@
+/* Globální nastavení pro herní vzhled */
+body {
+    background-color: #0d0d0d; /* Velmi temné, skoro černé pozadí */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(15, 10, 10, 0.95));
+    color: #e0e0e0; /* Lehce šedé písmo, aby netahalo oči jako čistě bílá */
+    font-family: 'Cinzel', 'Georgia', 'Times New Roman', serif; /* Elegantní fantasy patkové písmo */
+    line-height: 1.7;
+    padding: 30px;
+    margin: 0;
+}
+
+/* Hlavička stránky s logem/nadpisem */
+header {
+    text-align: center;
+    border-bottom: 3px double #b71c1c; /* Dvojitá krvavě rudá čára */
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #ffb300; /* Božská zlatá barva (Godwoken) */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px rgba(255, 179, 0, 0.4); /* Jemná zlatá záře */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    color: #b0bec5;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Styl pro jednotlivé sekce (Karty) */
+section {
+    background-color: #161616; /* Tmavě šedé panely */
+    border: 1px solid #332211; /* Jemný bronzovo-hnědý okraj */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efekt při najetí myši na sekci */
+section:hover {
+    transform: translateY(-2px);
+    border-color: #ffb300; /* Okraj při najetí zčervená/zezloutne */
+}
+
+section h2 {
+    color: #e53935; /* Temně rudá pro podnadpisy */
+    font-size: 1.6rem;
+    border-bottom: 1px solid #331111;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Úprava seznamu (Vlastnosti hry) */
+ul {
+    list-style-type: none; /* Odstraní nudné černé tečky */
+    padding-left: 5px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+}
+
+/* Místo obyčejné tečky vložíme herní zlatý čtvereček/kosočtverec */
+ul li::before {
+    content: "♦";
+    position: absolute;
+    left: 0;
+    color: #ffb300; /* Zlatý bod seznamu */
+    font-size: 1.2rem;
+}
+
+ul li strong {
+    color: #ffffff; /* Zvýrazněný text bude čistě bílý */
+}
+
+/* Magické herní tlačítko (Source Button) */
+button {
+    background-color: #791111; /* Hluboká rudá */
+    background-image: linear-gradient(#991f1f, #590c0c);
+    color: #ffffff;
+    border: 1px solid #ffb300; /* Zlaté lemování tlačítka */
+    padding: 12px 28px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(#b71c1c, #791111);
+    box-shadow: 0px 0px 15px rgba(229, 57, 53, 0.6); /* Tlačítko po najetí rudě plane */
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Odkazy (Odkaz na Larian Studios) */
+a {
+    color: #ffb300; /* Zlaté odkazy */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ffd54f; /* Světlejší zlatá při najetí */
+    text-decoration: underline;
+}
+
+/* Patička webu */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #262626;
+    color: #757575;
+    font-size: 0.9rem;
+}
